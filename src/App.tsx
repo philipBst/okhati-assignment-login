@@ -28,6 +28,7 @@ function App() {
             id="password"
             label="Password"
             variant="outlined"
+            type="password"
           ></TextField>
         </div>
         <div className="field">
