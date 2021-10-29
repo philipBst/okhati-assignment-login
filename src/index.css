@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #1e1e1e;
 }
 
 #root {
@@ -13,6 +14,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  #root {
+    flex-direction: column;
+  }
 }
 
 .form-control {
@@ -20,6 +28,7 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   text-align: center;
   border-radius: 0.7rem;
+  background: #fff;
 }
 
 div.field {
@@ -47,4 +56,25 @@ button.btn:hover {
 
 .logo {
   width: 2.5rem;
+}
+
+.signup {
+  width: 20rem;
+}
+
+.names {
+  display: flex;
+  gap: 0.5rem;
+}
+
+div.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+div.MuiFormControl-root.MuiTextField-root {
+  width: 100%;
 }
