@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import { TextField } from "@material-ui/core";
 import { Button } from "@material-ui/core";
 
@@ -49,6 +51,9 @@ const SignUp = () => {
             </div>
           </div>
         </form>
+        <div className="field">
+          <Link to="/">Already Have an account? Login</Link>
+        </div>
       </div>
     </div>
   );
